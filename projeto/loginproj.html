@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP Technologies | Login</title>
+    <link rel="stylesheet" href="style-login-proj.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="shortcut icon" href="logo-JP.png" type="image/x-icon">
+    <script src="loginproj.js" defer></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <h2 class="logo">JP Technologies</h2>
+        <nav class="navigation">
+            <a href="https://jptechnologies.com.br/index.php/contato/" target="_blank">Contato</a>
+        </nav>
+    </header>
+    <section class="area-login">
+        <div class="login">
+            <div> 
+                <h2>Login</h2>
+            </div>
+            <form autocomplete="off">
+                <span class="aviso" id="aviso"></span>
+                <input id="email" type="text" name="email" placeholder="Usuário" autofocus>
+                <input id="senha" type="password" name="senha" placeholder="Sua Senha">
+                
+                
+                <input type="submit" value="entrar" id="Entrar" onclick="logar(); return false" >
+                
+                <div class="mostrarsenhacontainer">
+                    <input class="checkbox" type="checkbox" value="lembrarSenha" id="lembrarSenha">
+                    <label for="lembrarSenha" class="lembrarSenha">Lembrar Senha</label>
+                    <label for="mostrarSenha">Mostrar Senha</label>
+                    <input class="checkbox" type="checkbox" name="" id="mostrar" value="mostrar senha" onclick="mostrarSenha()">
+                </div>
+                <div class="lembrarSenhaContainer">
+                </div>
+            </form>
+            <p> <a href="novasenha.html">Esqueceu sua senha?</a></p>
+        </div>
+    </section>
+</body>
+</html>

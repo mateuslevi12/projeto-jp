@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP Technologies | Configs</title>
+    <link rel="stylesheet" href="style-login-proj.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="shortcut icon" href="logo-JP.png" type="image/x-icon">
+    <script src="criacao.js" defer></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <h2 class="logo">JP Technologies</h2>
+        <nav class="navigation">
+            <a href="pagina-inicial.html">Inicio</a>
+            <a href="avaliação.html">Avaliação</a>
+            <a href="resultaval.html">Resultado da avaliação</a>
+            <a href="#">Configurações</a>
+            <a href="https://jptechnologies.com.br/index.php/contato/" target="_blank">Contato</a>
+            <a class="fazerlogin" href="loginproj.html">Sair</a>
+        </nav>
+    </header>
+    <section class="area-login" >
+        <div class="login" id="login">
+            <div> 
+                <h2>Adicionar Perguntas</h2>
+            </div>
+            <div id="formulario">
+                <form autocomplete="off" id="form">
+                    <input type="text" name="" id="titulo" placeholder="Digite o número da pergunta. Ex: Pergunta 1">
+                    <textarea id="descricao" cols="2" rows="10" placeholder="Digite a descrição da pergunta" style="height: 120px;"></textarea>
+                    <input type="submit" value="Adicionar" id="submit">
+                </form> 
+            </div>
+        </div>
+        <div class="questionList" id="questionList" style="display: none;"> 
+            <strong> Perguntas adicionadas </strong>
+        </div>
+        <script>
+            let add = document.getElementById('submit')
+            let div = document.getElementById('questionList')
+
+            function aparecer() {
+                div.style.display = 'block'
+            } 
+            add.addEventListener('click', aparecer)
+
+        </script>
+</body>
+</html>
+

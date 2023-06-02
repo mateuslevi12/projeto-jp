@@ -1,0 +1,179 @@
+body {
+    background-color: #1b1f27;
+    overflow: hidden;
+    
+}
+
+.pg-av {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* pegar todo o espaço disponivel da tela */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181920;
+    border-radius: 10px;
+    
+    height: 320px;
+    padding: 35px;
+    box-shadow: 5px 5px 5px 5px  #131519;
+    padding: auto;
+    color: #cbd0f7;
+}
+
+.table input[type="text"] {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    outline: none;
+    border-radius: 8px;
+    background-color: #252a34;
+    border: none;
+    color: #cbd0f7;
+    padding-left: 14px;
+    margin-top: 30px;
+    
+}
+
+p {
+    margin-left: -3px;
+    margin-bottom: 0;
+}
+
+.btts a {
+    color: #fff;
+    background: inherit;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid #5568fe;
+    border-radius: 5px;
+}
+
+.btts a:hover {
+    color: #fff;
+    padding: 15px;
+    background-color: #5568fe;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btts {
+    padding-top: 65px;
+}
+
+.ant {
+    margin-right: 10px;
+}
+
+.container input {
+    display: none;
+    padding: 0;
+}
+
+.container label {
+    font-size: 35px;
+    color: #444;
+    padding: 0 10px 0 10px;
+    float: right;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.container input:not(:checked) ~ label:hover,
+.container input:not(:checked) ~ label:hover ~ label {
+    color: #cbd0f7;
+}
+
+.container input:checked ~ label {
+    color: #cbd0f7;
+}
+
+.container input#rate-5:checked ~ label {
+    color: #fff;
+    text-shadow: 0 0 20px rgb(228, 224, 220);
+}
+
+#rate-1:checked:hover ~ form header:before, #rate-1:hover ~ form header:before {
+    content: "Muito ruim";
+}
+
+#rate-2:checked ~ form header:before, #rate-2:hover ~ form header:before {
+    content: "Ruim";
+}
+
+#rate-3:checked ~ form header:before, #rate-3:hover ~ form header:before {
+    content: "Regular";
+}
+
+#rate-4:checked ~ form header:before, #rate-4:hover ~ form header:before {
+    content: "Bom";
+}
+
+#rate-5:checked ~ form header:before, #rate-5:hover ~ form header:before {
+    content: "Muito bom";
+}
+
+
+form header {
+    width: 100%;
+    font-size: 25px;
+    color: #cbd0f7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.perg {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background: #252a34;
+    color: #cbd0f7;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 0 0 10px;
+}
+
+button {
+    color: #cbd0f7;
+    background: inherit;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid #5568fe;
+    width: 105%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #cbd0f7;
+    padding: 15px;
+    background-color: #5568fe;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pergunta {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,194 @@
+/* mudar a cor de fundo, mudar a fonte, esconder barra de rolagem */
+body {
+    background-color: #1b1f27;
+
+    overflow: hidden;
+    margin: 0;
+}
+
+/* alinhar tudo e centralizar */
+.area-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* pegar todo o espaço disponivel da tela */
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* alterar a altura ,largura e o espaçamento interno da box do login */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181920;
+    border-radius: 10px;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    box-shadow: 5px 5px 5px 5px  #131519;
+}
+
+/* colocar tudo um embaixo do outro */
+.login form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* alterar a distância entre os inputs */
+.login input {
+    margin-top: 10px;
+    background-color: #252a34;
+    color: #cbd0f7;
+    padding-left: 14px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.login input[type="checkbox"] {
+    height: 20px;
+ }
+
+.login img {
+    width: 65px;
+    height: auto;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #cbd0f7;
+    font-size: 14px;
+}
+
+form [type="submit"] {
+    display: block;
+    border: 1px solid #5568fe;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover {
+    background:  #5568fe;
+}
+
+.lembrarSenhaContainer {
+    display: flex;
+    margin-left: 2px;
+    
+}
+
+.lembrarSenhaContainer label {
+    margin: 11px 0 0 5px;
+    color: #cbd0f7;
+}
+
+p {
+    color: #cbd0f7;
+}
+
+a {
+    color: #5568fe;
+    text-decoration: none;
+}
+
+.aaaa {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+h2, h3 {
+    color: #fff;
+} 
+
+textarea {
+    background: #252a34;
+    color: #cbd0f7;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 0 0 10px;
+}
+
+.aviso {
+    color: rgb(207, 4, 4);
+    font-size: small;
+}
+
+/* 207, 4, 4 */
+
+.mostrarsenhacontainer {
+    display: flex;
+    margin-right: 9px;
+    justify-content: end;
+}
+
+.mostrarsenhacontainer label {
+    margin: 11px 0 0 0px;
+    color: #cbd0f7;
+}
+
+.lembrarSenha {
+    padding-right: 85px;
+}
+
+.checkbox {
+    cursor:pointer;
+}
+
+#titulo {
+    margin-bottom: 10px;
+}
+
+#formulario {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nova_perg {
+        display: flex;
+        flex-direction: column;
+}
+
+.voltar {
+    margin-top: 10px;
+}
+
+.questionList {
+    display: flex;
+    flex-direction: column;
+    background-color: #181920;
+    border-radius: 10px;
+    height: 320px;
+    padding: 35px;
+    box-shadow: 5px 5px 5px 5px  #131519;
+    padding: auto;
+    color: #cbd0f7;
+    margin-left: 20px;
+    overflow: auto;
+    
+}
+
+button {
+    border: 1px solid #5568fe;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: #cbd0f7;
+    background: #252a34;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #5568fe;
+}

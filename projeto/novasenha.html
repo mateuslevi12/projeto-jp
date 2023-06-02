@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP Technologies | Recuperar senha</title>
+    <link rel="stylesheet" href="style-login-proj.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="shortcut icon" href="logo-JP.png" type="image/x-icon">
+    <script src="loginproj.js" defer></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <h2 class="logo">JP Technologies</h2>
+        <nav class="navigation">
+            <a href="https://jptechnologies.com.br/index.php/contato/" target="_blank">Contato</a>
+        </nav>
+    </header>
+    <section class="area-login">
+        <div class="login">
+            <div> 
+                <h2>Recupere sua senha</h2>
+                <p>É só informar seu email abaixo. Você vai 
+                    receber uma mensagem com um link para poder 
+                    criar uma nova senha. O link será válido por 24 horas. </p>
+            </div>
+            <form autocomplete="off">
+                <span class="aviso" id="aviso"></span>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" autofocus>
+                <!-- <input id="senha" type="password" name="senha" placeholder="Sua Senha"> -->    
+                <input type="submit" value="Enviar" id="Entrar">
+                <a class="voltar" href="loginproj.html">Voltar</a>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>

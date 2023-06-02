@@ -1,0 +1,47 @@
+body {
+    overflow: hidden;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #363636, 	#9932CC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login-image {
+    width: 30vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 63px;
+    font-weight: 600;
+    color: #fff;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    color: #fff;
+}

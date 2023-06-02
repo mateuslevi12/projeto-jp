@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP Technologies | Avaliação</title>
+    <link rel="stylesheet" href="style-avaliação.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="shortcut icon" href="logo-JP.png" type="image/x-icon">
+    <script src="pesquisa.js"></script>
+</head>
+<body>
+    <header class="nav-bar">
+        <h2 class="logo">JP Technologies</h2>
+        <nav class="navigation">
+            <a href="pagina-inicial.html">Inicio</a>
+            <a href="avaliação.html">Avaliação</a>
+            <a href="resultaval.html">Resultado da avaliação</a>
+            <a href="configs.html">Configurações</a>
+            <a href="https://jptechnologies.com.br/index.php/contato/" target="_blank">Contato</a>
+            <a class="fazerlogin" href="loginproj.html">Sair</a>   
+    </header>
+    <section class="pg-av container">
+        <main class="table container" id="table">
+            <div class="content container">
+                <div class="title"> <h2> Pesquisa de satisfação</h2></div>
+                <div class="description">Abaixo você irá começar sua <br>
+                  pesquisa de satisfação sao apenas algumas perguntas rapidas.</div>
+            </div>
+                <button id="btnChangeContent" onclick="changeContent()">Iniciar</button>
+                <div class="container" id="ratingContainer" style="display: none;">
+                    <div class="star-widget" >
+                        <input type="radio"  name="rate" id="rate-5">
+                        <label for="rate-5">&#9733;</label>
+                        <input type="radio"  name="rate" id="rate-4">
+                        <label for="rate-4">&#9733;</label>
+                        <input type="radio"  name="rate" id="rate-3">
+                        <label for="rate-3">&#9733;</label>
+                        <input type="radio"  name="rate" id="rate-2">
+                        <label for="rate-2">&#9733;</label>
+                        <input type="radio"  name="rate" id="rate-1">
+                        <label for="rate-1">&#9733;</label>
+                        <form action="#">
+                            <header></header>
+                            <div class="textarea">
+                                <textarea class="perg" cols="30" placeholder="Descreva sua experiência..." style="height: 50px;" ></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <span id="rating-value"></span>
+                </div>
+        </main>
+    </main>
+    
+</section>
+    <script src="pesquisa.js"></script>
+</body>
+</html>
+<!-- <input type="text" name="" placeholder="Digite sua opinião aqui">
+<div class="btts">
+    <a class="prox" href="perg2.html">Proxima pergunta</a> 
+</div> -->
+<!-- <div class="btn">
+    <button type="submit">Proxima</button>
+</div> -->
